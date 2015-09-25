@@ -1,0 +1,83 @@
+@mixin imagenes($porcentaje,$ubicacion){
+	width: $porcentaje;
+	float: 	$ubicacion;
+}
+
+@mixin ribbon{
+	width: 0px;
+    height: 100px;
+    border-left: 80px solid $sky-blue;
+    border-right: 80px solid $sky-blue;
+    border-bottom: 55px solid transparent;
+    margin-bottom: 20px;
+	}
+////// esto no anda no toma la posicion de left o right?? lo remplace x left y right :(
+@mixin ubicacion($ancho,$posicion){
+	width: $ancho;
+	float:$posicion;
+}
+
+@mixin circulo{
+	 width: 150px;
+     height: 150px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #3A96D8;
+     margin-top: 15px;
+}
+
+@mixin input{
+        padding: 8px; 
+        margin: 4px 0 10px 0; 
+        background: #fff; 
+        font-size: 14px; 
+        color: #555; 
+        border: 1px #ddd solid;
+        width: 450px;
+        height: 20px;
+}
+@mixin textarea{
+     padding: 8px; 
+        margin: 4px 0 10px 0; 
+        background: #fff; 
+        font-size: 14px; 
+        color: #555; 
+        border: 1px #ddd solid;
+        width: 450px;
+        height: 20px;
+}
+
+@mixin boton{
+     width: 60px;
+      height: 40px;
+      float:right;
+      background: #4a4a4a;
+      padding: 10px 5px;
+      color: white;
+      border-color: #4a4a4a;
+}
+
+@mixin formulario{
+    float: left;
+        border: 1px solid #ddd; 
+        padding: 30px 40px 20px 40px; 
+        margin: 75px 0 0 0;
+        width: 715px;
+        background: #fff;
+                
+        /* -- CSS3 - define rounded corners for the form -- */  
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;        
+        
+        /* -- CSS3 - create a background graident -- */
+        background: -webkit-gradient(linear, 0% 0%, 0% 40%, from(#EEE), to(#FFFFFF)); 
+        background: -moz-linear-gradient(0% 40% 90deg,#FFF, #EEE); 
+        
+        /* -- CSS3 - add a drop shadow -- */
+        -webkit-box-shadow:0px 0 50px #ccc;
+        -moz-box-shadow:0px 0 50px #ccc; 
+        box-shadow:0px 0 50px #ccc;             
+    
+}
