@@ -19,6 +19,4 @@ gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 
 #dependencias para heroku
 gem 'puma', '~> 2.14.0'
-gem 'rack-zippy', '~> 3.0.1'
-gem 'rack-contrib', '~> 1.4.0'
-gem 'zippy_static_cache', '~> 0.0.1'
+
